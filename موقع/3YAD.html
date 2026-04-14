@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3YAD | مجتمع عياد الاحترافي</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Premium Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cinematic Preloader -->
+    <div id="preloader">
+        <div class="loader-logo">3YAD</div>
+        <div class="loader-text">Loading System...</div>
+    </div>
+
+    <!-- Dynamic Mouse Glow Tracker -->
+    <div class="mouse-glow"></div>
+
+    <div class="bg-pattern"></div>
+
+    <!-- Particles Background Layer -->
+
+    <!-- Custom Right Click Context Menu -->
+    <div id="customContextMenu" class="context-menu">
+        <div class="menu-title"><i class="fa-solid fa-shield-halved"></i> تم تأمين النظام بواسطة 3YAD</div>
+        <ul class="menu-options">
+            <li onclick="window.location.reload()"><i class="fa-solid fa-rotate-right"></i> إعادة إنعاش البيانات
+                (Refresh)</li>
+            <li onclick="window.open('https://discord.gg/D4sW6Tyd', '_blank')"><i class="fa-brands fa-discord"></i> دخول
+                السيرفر الرسمي</li>
+            <li onclick="window.open('https://x.com/Ayad01224', '_blank')"><i class="fa-brands fa-twitter"></i> منصة X
+                للرئيس</li>
+        </ul>
+        <div class="menu-footer">3YAD Gaming Community © 2026</div>
+    </div>
+    <div id="particles-js"
+        style="position:fixed; top:0; left:0; width:100%; height:100vh; z-index:-2; pointer-events:none; opacity: 0.6;">
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo-container" onclick="document.querySelector('[data-target=\'home\']').click()">
+                <div class="logo-icon">3</div>
+                <span>3YAD</span>
+            </a>
+
+            <div class="menu-toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <ul class="nav-links">
+                <li data-target="home" class="active">الرئيسية</li>
+                <li data-target="rules">القوانين</li>
+                <li data-target="store">المتجر <i class="fa-solid fa-lock"
+                        style="font-size: 0.75rem; margin-right: 4px; color: var(--primary); opacity: 0.9;"></i></li>
+                <li data-target="jobs">تقديم وظائف</li>
+                <li data-target="servers">السيرفرات</li>
+                <li data-target="founders">المؤسسين</li>
+                <li data-target="activation">التفعيل</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SPA VIEWS CONTAINER -->
+    <main id="app">
+        <!-- Home View -->
+        <section id="home" class="page-view active-view">
+            <div class="description-box">
+                سيرفر 3YAD هو مجتمع متكامل يهدف لتقديم تجربة حياة واقعية فريدة من نوعها، نركز على الاحترافية والعدالة
+                وبناء مجتمع مترابط وممتع لجميع اللاعبين. انضم إلينا اليوم وكن جزءاً من القصة العظيمة!
+            </div>
+
+            <div class="btn-group">
+                <a href="https://discord.gg/D4sW6Tyd" target="_blank" class="btn btn-primary">
+                    <i class="fa-brands fa-discord"></i> سيرفر الديسكورد
+                </a>
+                <a href="https://x.com/Ayad01224" target="_blank" class="btn btn-secondary">
+                    <i class="fa-brands fa-x-twitter"></i> حسابنا في X
+                </a>
+            </div>
+        </section>
+
+        <!-- Rules View -->
+        <section id="rules" class="page-view">
+            <h2 class="section-title">القوانين العامة</h2>
+            <div class="rules-list">
+                <div class="rule-box">
+                    <div class="rule-num">1</div>
+                    <div>
+                        <h3 style="margin-bottom:8px; font-weight:800;">الاحترام المتبادل</h3>
+                        <p style="color:var(--text-muted); line-height:1.6;">يجب احترام جميع اللاعبين والإداريين، لا
+                            يسمح بالشتم أو الإساءة بأي شكل من الأشكال. السيرفر للجميع.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">2</div>
+                    <div>
+                        <h3 style="margin-bottom:8px; font-weight:800;">الواقعية (Roleplay)</h3>
+                        <p style="color:var(--text-muted); line-height:1.6;">هذا السيرفر مخصص للحياة الواقعية. يجب عليك
+                            تقمص شخصيتك والتصرف كما لو كنت في العالم الحقيقي تماماً.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">3</div>
+                    <div>
+                        <h3 style="margin-bottom:8px; font-weight:800;">استخدام الهاكات (Cheating)</h3>
+                        <p style="color:var(--text-muted); line-height:1.6;">استخدام أي نوع من أنواع الغش، الهاكات، أو
+                            استغلال الثغرات يؤدي إلى الحظر النهائي (الباند النهائي) مباشرة دون تراجع.</p>
+                    </div>
+                </div>
+                <div class="rule-box">
+                    <div class="rule-num">4</div>
+                    <div>
+                        <h3 style="margin-bottom:8px; font-weight:800;">الخروج عن مسار اللعب (Fail RP / OOC)</h3>
+                        <p style="color:var(--text-muted); line-height:1.6;">يمنع التحدث بأمور خارج اللعبة في الشات
+                            الصوتي داخل السيرفر إلا في حالات الضرورة القصوى وعند حضور الإدارة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store View -->
+        <section id="store" class="page-view" style="justify-content: center;">
+            <div
+                style="text-align: center; max-width: 600px; padding: 60px 40px; background: var(--bg-glass); border: 1px solid var(--border-glass); border-radius: 24px; backdrop-filter: blur(20px); position: relative; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.8);">
+                <!-- Glowing Background Element -->
+                <div
+                    style="position: absolute; top: -50px; left: 50%; transform: translateX(-50%); width: 250px; height: 250px; background: var(--primary); filter: blur(100px); opacity: 0.15;">
+                </div>
+
+                <i class="fa-solid fa-hourglass-half"
+                    style="font-size: 5rem; color: var(--primary); margin-bottom: 30px; animation: pulse-glass 2.5s infinite ease-in-out; filter: drop-shadow(0 0 15px var(--primary-glow));"></i>
+
+                <h2
+                    style="font-size: 3rem; font-weight: 900; margin-bottom: 20px; background: linear-gradient(to bottom, #fff, #aaa); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                    المتجر قريباً</h2>
+
+                <p
+                    style="color: var(--text-muted); font-size: 1.25rem; line-height: 1.8; margin-bottom: 40px; font-weight: 600;">
+                    جاري العمل على تجهيز متجر أسطوري يليق بمجتمع 3YAD. سيتم قريباً إضافة رتب حصرية وباقات سيارات ومقرات
+                    لدعم مسيرتك!
+                </p>
+
+                <div
+                    style="width: 100%; height: 6px; background: rgba(255,255,255,0.05); border-radius: 10px; overflow: hidden; position: relative;">
+                    <div
+                        style="position: absolute; top:0; left:0; height: 100%; width: 40%; background: var(--primary); box-shadow: 0 0 20px var(--primary); animation: loadProgress 2s infinite ease-in-out;">
+                    </div>
+                </div>
+                <style>
+                    @keyframes loadProgress {
+                        0% {
+                            width: 0%;
+                            left: 0;
+                        }
+
+                        50% {
+                            width: 60%;
+                            left: 20%;
+                        }
+
+                        100% {
+                            width: 0%;
+                            left: 100%;
+                        }
+                    }
+
+                    @keyframes pulse-glass {
+                        0% {
+                            transform: scale(1);
+                        }
+
+                        50% {
+                            transform: scale(1.15);
+                        }
+
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+                </style>
+            </div>
+        </section>
+
+        <!-- Jobs View -->
+        <section id="jobs" class="page-view">
+            <h2 class="section-title">بوابة التوظيف</h2>
+            <div class="form-glass">
+                <p style="text-align:center; color:var(--text-muted); margin-bottom:30px; line-height:1.8;">
+                    التقديم مفتوح حالياً للقطاعات الحكومية. يرجى ملء النموذج بدقة وسيصلك الرد عبر رسائل الديسكورد.
+                </p>
+                <form id="jobForm" onsubmit="event.preventDefault(); window.submitJobApplication();">
+                    <div class="input-grp">
+                        <label>الاسم داخل اللعبة (In-Game Name)</label>
+                        <input type="text" id="jobIgn" required placeholder="مثال: Ahmed_Ali">
+                    </div>
+                    <div class="input-grp">
+                        <label>حساب الديسكورد (Discord Tag)</label>
+                        <input type="text" id="jobDiscord" required placeholder="مثال: User#1234">
+                    </div>
+                    <div class="input-grp">
+                        <label>اختر القطاع المراد التقديم عليه</label>
+                        <select id="jobDept" required>
+                            <option value="" disabled selected>-- اختر القطاع المفضل --</option>
+                            <option value="الشرطة (جهة حكومية)">الشرطة (جهة حكومية)</option>
+                            <option value="الإسعاف المستقل (وزارة الصحة)">الإسعاف المستقل (وزارة الصحة)</option>
+                            <option value="الميكانيكا (الصيانة والدعم)">الميكانيكا (الصيانة والدعم)</option>
+                            <option value="طاقم الإدارة والدعم الفني (Staff)">طاقم الإدارة والدعم الفني (Staff)</option>
+                        </select>
+                    </div>
+                    <div class="input-grp">
+                        <label>لماذا تود الانضمام إلينا؟</label>
+                        <textarea id="jobReason" rows="4" required
+                            placeholder="اكتب نبذة عنك وخبراتك السابقة..."></textarea>
+                    </div>
+                    <button type="submit" id="jobSubmitBtn" class="btn btn-primary"
+                        style="width:100%; justify-content:center; margin-top:10px;">
+                        <i class="fa-solid fa-paper-plane"></i> إرسال الطلب الآن
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Servers View -->
+        <section id="servers" class="page-view">
+            <h2 class="section-title">حالة السيرفرات</h2>
+            <div class="grid-container" style="max-width: 800px;">
+                <!-- Server 1 -->
+                <div class="card-premium" style="border-top: 4px solid #10b981;">
+                    <div class="status-dot status-online"></div>
+                    <i class="fa-solid fa-server card-icon"
+                        style="color: #10b981; filter: drop-shadow(0 0 15px #10b981);"></i>
+                    <h3>السيرفر الرئيسي (#1)</h3>
+                    <p style="color:#10b981; font-weight:bold; margin-bottom: 15px;">متصل (Online)</p>
+                    <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; margin-bottom: 25px;">
+                        <p style="font-size: 1.5rem; font-weight:900; color:white; margin:0;">124 <span
+                                style="color:var(--text-muted); font-size:1rem; font-weight:normal;">/ 256 لاعب
+                                متصل</span></p>
+                    </div>
+                    <a href="https://discord.gg/D4sW6Tyd" target="_blank" class="btn btn-secondary"
+                        style="margin-top:auto; width:100%; justify-content:center; border-color:#10b981; color:#10b981;">دخول
+                        السيرفر</a>
+                </div>
+
+                <!-- Server 2 -->
+                <div class="card-premium" style="border-top: 4px solid #f59e0b;">
+                    <div class="status-dot status-offline"></div>
+                    <i class="fa-solid fa-hammer card-icon"
+                        style="color: #f59e0b; filter: drop-shadow(0 0 15px #f59e0b);"></i>
+                    <h3>سيرفر التحديثات التجريبي</h3>
+                    <p style="color:#f59e0b; font-weight:bold; margin-bottom: 15px;">صيانة دورية</p>
+                    <div style="background: rgba(0,0,0,0.3); padding: 15px; border-radius: 12px; margin-bottom: 25px;">
+                        <p style="font-size: 1.5rem; font-weight:900; color:var(--text-muted); margin:0;">مغلق</p>
+                    </div>
+                    <button class="btn btn-secondary" disabled
+                        style="margin-top:auto; width:100%; justify-content:center; opacity:0.4; cursor:not-allowed;">دخول
+                        السيرفر (مجمد)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founders View -->
+        <section id="founders" class="page-view">
+            <h2 class="section-title">رئيس المجتمع</h2>
+            <div class="grid-container" style="max-width: 450px; display: flex; justify-content: center;">
+                <div class="card-premium" style="width: 100%;">
+                    <div
+                        style="width: 180px; height: 180px; border-radius: 50%; margin: 0 auto 30px; border: 4px solid var(--primary); box-shadow: 0 0 40px rgba(255, 30, 30, 0.6); overflow: hidden; background: #050507; text-align: center;">
+                        <img src="owner.png" alt="President" style="width: 100%; height: 100%; object-fit: cover;"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-block';">
+                        <i class="fa-solid fa-crown"
+                            style="font-size: 5rem; color:var(--primary); line-height: 170px; display: none; filter: drop-shadow(0 0 10px var(--primary-glow));"></i>
+                    </div>
+                    <h3 style="font-size: 2.2rem; font-weight: 900; color: white; margin-bottom: 5px;">| معاليكـ</h3>
+                    <p style="color: var(--primary); font-weight:bold; margin-bottom:15px; font-size:1.2rem;">الرئيس |
+                        Owner</p>
+
+                    <div
+                        style="background: rgba(255,255,255,0.05); padding: 8px 25px; border-radius: 50px; display: inline-flex; align-items: center; gap: 10px; margin-bottom: 25px; border: 1px solid var(--border-glass);">
+                        <div
+                            style="width: 10px; height: 10px; background: #10b981; border-radius: 50%; box-shadow: 0 0 10px #10b981; animation: pulse-green 2s infinite;">
+                        </div>
+                        <span
+                            style="color: white; font-weight: 800; font-size: 1.15rem; letter-spacing: 1px; font-family: sans-serif;">@ayad.i</span>
+                    </div>
+
+                    <p style="font-size: 1.15rem; line-height: 1.8; color: var(--text-muted);">
+                        المؤسس والرئيس الأعلى لمجتمع 3YAD. قائد الرؤية الإبداعية والمشرف العام على جميع العمليات لضمان
+                        تقديم أضخم تجربة واقعية احترافية خالية من العيوب.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activation View -->
+        <section id="activation" class="page-view">
+            <h2 class="section-title">دليل التفعيل السريع</h2>
+            <div class="card-premium"
+                style="max-width: 900px; text-align:right; border-right: 5px solid var(--primary); border-left: 1px solid var(--border-glass);">
+                <div style="display:flex; align-items:center; gap:20px; margin-bottom: 30px;">
+                    <div style="background:rgba(255,30,30,0.1); padding:20px; border-radius:16px;">
+                        <i class="fa-solid fa-shield-halved" style="font-size:3rem; color:var(--primary);"></i>
+                    </div>
+                    <h3 style="font-size:2rem; margin:0;">خطوات دخول السيرفر بسهولة</h3>
+                </div>
+
+                <ol
+                    style="padding-right: 30px; line-height:2.8; font-size:1.2rem; color:var(--text-muted); font-weight:600;">
+                    <li>انضم إلى <span style="color:var(--text-main);">سيرفر الديسكورد الرسمي</span> وتأكد من توثيق
+                        حسابك.</li>
+                    <li>توجه إلى قسم <strong style="color:var(--primary);">#التفعيل</strong> واقرأ القوانين بعناية تامة.
+                    </li>
+                    <li>قم بفتح تذكرة التفعيل وستقوم الإدارة بالتعامل المباشر معك لضمان جودة الأداء الشخصي.</li>
+                    <li>قم بربط حساب الديسكورد الخاص بك ببرنامج <strong style="color:white;">FiveM</strong> لتتمكن من
+                        الدخول.</li>
+                    <li>في حال واجهت أي مشاكل فنية، لا تتردد في فتح (تذكرة دعم فني).</li>
+                </ol>
+
+                <div style="margin-top: 40px; text-align:center;">
+                    <a href="https://discord.gg/D4sW6Tyd" target="_blank" class="btn btn-primary"
+                        style="justify-content:center;">
+                        <i class="fa-brands fa-discord"></i> دخول الديسكورد للبدء الآن
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Floating Live Chat -->
+        <div class="chat-widget">
+            <div class="chat-btn" onclick="document.getElementById('chatBox').classList.toggle('open')">
+                <i class="fa-solid fa-headset"></i>
+            </div>
+
+            <div class="chat-box" id="chatBox">
+                <div class="chat-header" style="padding: 0; flex-direction: column;">
+                    <div style="display: flex; width: 100%; border-bottom: 1px solid var(--border-glass);">
+                        <div class="chat-tab active" id="tab-text" onclick="window.switchChatTab('text')"><i
+                                class="fa-solid fa-comment-dots"></i> الشات الكتابي</div>
+                        <div class="chat-tab" id="tab-voice" onclick="window.switchChatTab('voice')"><i
+                                class="fa-solid fa-headphones"></i> غرفة الصوت</div>
+                    </div>
+                </div>
+
+                <!-- Text Chat View -->
+                <div id="chat-text-area" style="display: flex; flex-direction: column; flex-grow: 1; height: 100%;">
+                    <div class="chat-messages" id="chatMessages">
+                        <div class="msg msg-bot">
+                            <strong>نظام 3YAD 🤖</strong><br>
+                            أهلاً بك يا بطل! نحن هنا متواجدون للحديث معك. الشات الكتابي مفتوح للجميع.
+                        </div>
+                    </div>
+                    <form class="chat-input" onsubmit="event.preventDefault(); window.sendChatMessage();">
+                        <input type="text" id="chatInputText" placeholder="اكتب رسالتك للإدارة واللاعبين..." required>
+                        <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+                <!-- Voice Room View -->
+                <div id="chat-voice-area"
+                    style="display: none; flex-direction: column; flex-grow: 1; align-items: center; justify-content: center; background: rgba(5,5,10,0.95); padding: 20px;">
+                    <h3 style="margin-bottom: 30px; color: white;"><i class="fa-solid fa-tower-broadcast"
+                            style="color:var(--primary);"></i> غرفة التواصل المباشر</h3>
+
+                    <div class="voice-users" style="display: flex; gap: 30px; margin-bottom: 40px;">
+                        <div class="voice-user">
+                            <div class="voice-avatar speaking"><img src="owner.png"
+                                    style="width:100%;height:100%;object-fit:cover;border-radius:50%;"
+                                    onerror="this.style.display='none'"></div>
+                            <span>معاليكـ</span>
+                        </div>
+                        <div class="voice-user">
+                            <div class="voice-avatar" id="myVoiceAvatar"><i class="fa-solid fa-user-astronaut"></i>
+                            </div>
+                            <span>أنت (الزائر)</span>
+                        </div>
+                    </div>
+
+                    <div class="visualizer" id="voiceVisualizer"
+                        style="display:flex; gap:6px; height: 50px; align-items:flex-end; margin-bottom: 40px;">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+
+                    <button class="voice-call-btn" id="voiceCallBtn" onclick="window.toggleVoiceCall()">
+                        <i class="fa-solid fa-phone"></i> <span id="voiceCallText">انضمام للصوت</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-active">
+        <h2 style="font-size: 2rem; font-weight: 900; margin-bottom: 10px;">مجتمع <span
+                style="color:var(--primary);">3YAD</span></h2>
+        <p style="color: var(--text-muted);">جميع الحقوق محفوظة &copy; 2026 لمجتمع 3YAD للرول بلاي</p>
+        <div class="footer-icons">
+            <a href="https://discord.gg/D4sW6Tyd" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a href="https://x.com/Ayad01224" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Ultimate Interactive Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
